@@ -1,0 +1,94 @@
+$head-title: 6em;
+$sub-title: 2em;
+$body-text:1.2em;
+$back-board: url("./img/blackboard.jpg");
+$yellow: #FFF300;
+$dark-yellow: rgb(255, 217, 0);
+/*--- Fonts ---*/
+@font-face{
+    src: url(./fonts/CyberspaceRacewayBack-Black.ttf);
+    font-family: cyberrace-black;
+}
+@font-face{
+    src: url(./fonts/CyberspaceRacewayFront-Line);
+    font-family: cyberrace-line;
+}
+/*--- All ---*/
+#css-zen-garden{
+    margin: 0;
+    font-family: cyberrace-line;
+    background-image: linear-gradient(180deg, #E9E9E7 2%, #EFEEEC 27%, #EEEEEC 58%, #D5D4D0 94%);
+}
+/*--- Tag ---*/
+header {
+    height: 25em;
+    text-align: center;
+    background-image: $back-board;
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0.7em;
+        font-size: $head-title;
+        font-family: cyberrace-black;
+        color: $yellow;
+    }
+    h2 {
+        margin-top: 0;
+        color: white;
+    }
+}
+header:hover{
+    h1{text-shadow: 3px 5px 3px #ffcc00;}
+    h2{text-shadow: 3px 5px 20px #000000;}
+}
+
+footer {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 1.5em;
+    width: 100%;
+    background-color: $yellow;
+}
+
+a {color: #0077ff;}
+a:hover{color: blue;}
+
+/*--- Class & Id Part ---*/
+.summary{
+    margin: auto;
+    margin-top: -30px;
+    padding: 0.1em;
+    width: 30em;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: $yellow;
+}
+.preamble, #zen-supporting{
+    h3 {
+        margin: 1em 2em;
+        max-width: fit-content;
+        font-size: $sub-title;
+        background-color: $dark-yellow;
+        padding: 0.2em;
+    }
+    p {
+        font-size: $body-text;
+        background-color: #b1b1b1;
+        margin: 0.5em 3.4em;
+    }
+}
+.sidebar {
+    height: fit-content;
+    padding: 2em;
+    color: white;
+    background-image: $back-board;
+    a {
+        color: white;
+    }
+    a:hover{
+        color: $yellow;
+    }
+    li {
+        margin: 1em;
+    }
+}
